@@ -1,0 +1,262 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 7.1.1 (Python 3.13.0 on win32)" generated="2024-12-02T11:38:32.078243" rpa="false" schemaversion="5">
+<suite id="s1" name="Apitest" source="C:\Users\DW2\PycharmProjects\PythonProject\apitest.robot">
+<test id="s1-t1" name="Get All Products List" line="11">
+<kw name="Create Session" owner="RequestsLibrary">
+<msg time="2024-12-02T11:38:32.482593" level="INFO">Creating Session using : alias=api_session, url=https://automationexercise.com/api/productsList, headers={},                     cookies={}, auth=None, timeout=None, proxies=None, verify=False,                     debug=0 </msg>
+<arg>api_session</arg>
+<arg>${base_url}</arg>
+<doc>Create Session: create a HTTP session to a server</doc>
+<status status="PASS" start="2024-12-02T11:38:32.482315" elapsed="0.000483"/>
+</kw>
+<kw name="GET On Session" owner="RequestsLibrary">
+<msg time="2024-12-02T11:38:33.659188" level="INFO">GET Request : url=https://automationexercise.com/api/productsList 
+ path_url=/api/productsList 
+ headers={'User-Agent': 'python-requests/2.32.3', 'Accept-Encoding': 'gzip, deflate', 'Accept': '*/*', 'Connection': 'keep-alive'} 
+ body=None 
+ </msg>
+<msg time="2024-12-02T11:38:33.659554" level="INFO">GET Response : url=https://automationexercise.com/api/productsList 
+ status=200, reason=OK 
+ headers={'Date': 'Mon, 02 Dec 2024 14:38:33 GMT', 'Content-Type': 'text/html; charset=utf-8', 'Transfer-Encoding': 'chunked', 'Connection': 'keep-alive', 'vary': 'Accept,Cookie,Accept-Encoding', 'referrer-policy': 'same-origin', 'x-frame-options': 'DENY', 'x-content-type-options': 'nosniff', 'allow': 'POST, PUT, GET, OPTIONS, DELETE', 'x-powered-by': 'Phusion Passenger(R) 6.0.23', 'status': '200 OK', 'CF-Cache-Status': 'DYNAMIC', 'Report-To': '{"endpoints":[{"url":"https:\\/\\/a.nel.cloudflare.com\\/report\\/v4?s=Hv9NpBcsu1XXtv1A0aDtBlzPmNRwwAVbpqNzd6OGTdOZxGQs6sVFEw9HAsiQ5Ztx4ZNpZTCmhG6G9%2BxOm3evEDxJYEMxHj8%2BjvRdlC%2FEs1Tnpq9TCZvgLLfzfyXsv8bOmWkuBUCmzMdLdPfjhnM2AsMisXiA"}],"group":"cf-nel","max_age":604800}', 'NEL': '{"success_fraction":0,"report_to":"cf-nel","max_age":604800}', 'Server': 'cloudflare', 'CF-RAY': '8ebc0fad1f3202e6-GRU', 'Content-Encoding': 'gzip', 'alt-svc': 'h3=":443"; ma=86400', 'server-timing': 'cfL4;desc="?proto=TCP&amp;rtt=10616&amp;min_rtt=10207&amp;rtt_var=4645&amp;sent=5&amp;recv=6&amp;lost=0&amp;retrans=0&amp;sent_bytes=2871&amp;recv_bytes=788&amp;delivery_rate=302693&amp;cwnd=252&amp;unsent_bytes=0&amp;cid=4e05d5541f941e56&amp;ts=814&amp;x=0"'} 
+ body={"responseCode": 200, "products": [{"id": 1, "name": "Blue Top", "price": "Rs. 500", "brand": "Polo", "category": {"usertype": {"usertype": "Women"}, "category": "Tops"}}, {"id": 2, "name": "Men Tshirt", "price": "Rs. 400", "brand": "H&amp;M", "category": {"usertype": {"usertype": "Men"}, "category": "Tshirts"}}, {"id": 3, "name": "Sleeveless Dress", "price": "Rs. 1000", "brand": "Madame", "category": {"usertype": {"usertype": "Women"}, "category": "Dress"}}, {"id": 4, "name": "Stylish Dress", "price": "Rs. 1500", "brand": "Madame", "category": {"usertype": {"usertype": "Women"}, "category": "Dress"}}, {"id": 5, "name": "Winter Top", "price": "Rs. 600", "brand": "Mast &amp; Harbour", "category": {"usertype": {"usertype": "Women"}, "category": "Tops"}}, {"id": 6, "name": "Summer White Top", "price": "Rs. 400", "brand": "H&amp;M", "category": {"usertype": {"usertype": "Women"}, "category": "Tops"}}, {"id": 7, "name": "Madame Top For Women", "price": "Rs. 1000", "brand": "Madame", "category": {"usertype": {"usertype": "Women"}, "category": "Tops"}}, {"id": 8, "name": "Fancy Green Top", "price": "Rs. 700", "brand": "Polo", "category": {"usertype": {"usertype": "Women"}, "category": "Tops"}}, {"id": 11, "name": "Sleeves Printed Top - White", "price": "Rs. 499", "brand": "Babyhug", "category": {"usertype": {"usertype": "Kids"}, "category": "Tops &amp; Shirts"}}, {"id": 12, "name": "Half Sleeves Top Schiffli Detailing - Pink", "price": "Rs. 359", "brand": "Babyhug", "category": {"usertype": {"usertype": "Kids"}, "category": "Tops &amp; Shirts"}}, {"id": 13, "name": "Frozen Tops For Kids", "price": "Rs. 278", "brand": "Allen Solly Junior", "category": {"usertype": {"usertype": "Kids"}, "category": "Tops &amp; Shirts"}}, {"id": 14, "name": "Full Sleeves Top Cherry - Pink", "price": "Rs. 679", "brand": "Kookie Kids", "category": {"usertype": {"usertype": "Kids"}, "category": "Tops &amp; Shirts"}}, {"id": 15, "name": "Printed Off Shoulder Top - White", "price": "Rs. 315", "brand": "Babyhug", "category": {"usertype": {"usertype": "Kids"}, "category": "Tops &amp; Shirts"}}, {"id": 16, "name": "Sleeves Top and Short - Blue &amp; Pink", "price": "Rs. 478", "brand": "Babyhug", "category": {"usertype": {"usertype": "Kids"}, "category": "Dress"}}, {"id": 18, "name": "Little Girls Mr. Panda Shirt", "price": "Rs. 1200", "brand": "Kookie Kids", "category": {"usertype": {"usertype": "Kids"}, "category": "Tops &amp; Shirts"}}, {"id": 19, "name": "Sleeveless Unicorn Patch Gown - Pink", "price": "Rs. 1050", "brand": "Allen Solly Junior", "category": {"usertype": {"usertype": "Kids"}, "category": "Dress"}}, {"id": 20, "name": "Cotton Mull Embroidered Dress", "price": "Rs. 1190", "brand": "Kookie Kids", "category": {"usertype": {"usertype": "Kids"}, "category": "Dress"}}, {"id": 21, "name": "Blue Cotton Indie Mickey Dress", "price": "Rs. 1530", "brand": "Biba", "category": {"usertype": {"usertype": "Kids"}, "category": "Dress"}}, {"id": 22, "name": "Long Maxi Tulle Fancy Dress Up Outfits -Pink", "price": "Rs. 1600", "brand": "Biba", "category": {"usertype": {"usertype": "Kids"}, "category": "Dress"}}, {"id": 23, "name": "Sleeveless Unicorn Print Fit &amp; Flare Net Dress - Multi", "price": "Rs. 1100", "brand": "Biba", "category": {"usertype": {"usertype": "Kids"}, "category": "Dress"}}, {"id": 24, "name": "Colour Blocked Shirt \u2013 Sky Blue", "price": "Rs. 849", "brand": "Allen Solly Junior", "category": {"usertype": {"usertype": "Kids"}, "category": "Tops &amp; Shirts"}}, {"id": 28, "name": "Pure Cotton V-Neck T-Shirt", "price": "Rs. 1299", "brand": "H&amp;M", "category": {"usertype": {"usertype": "Men"}, "category": "Tshirts"}}, {"id": 29, "name": "Green Side Placket Detail T-Shirt", "price": "Rs. 1000", "brand": "Polo", "category": {"usertype": {"usertype": "Men"}, "category": "Tshirts"}}, {"id": 30, "name": "Premium Polo T-Shirts", "price": "Rs. 1500", "brand": "Polo", "category": {"usertype": {"usertype": "Men"}, "category": "Tshirts"}}, {"id": 31, "name": "Pure Cotton Neon Green Tshirt", "price": "Rs. 850", "brand": "H&amp;M", "category": {"usertype": {"usertype": "Men"}, "category": "Tshirts"}}, {"id": 33, "name": "Soft Stretch Jeans", "price": "Rs. 799", "brand": "Polo", "category": {"usertype": {"usertype": "Men"}, "category": "Jeans"}}, {"id": 35, "name": "Regular Fit Straight Jeans", "price": "Rs. 1200", "brand": "H&amp;M", "category": {"usertype": {"usertype": "Men"}, "category": "Jeans"}}, {"id": 37, "name": "Grunt Blue Slim Fit Jeans", "price": "Rs. 1400", "brand": "Polo", "category": {"usertype": {"usertype": "Men"}, "category": "Jeans"}}, {"id": 38, "name": "Rose Pink Embroidered Maxi Dress", "price": "Rs. 2300", "brand": "Madame", "category": {"usertype": {"usertype": "Women"}, "category": "Dress"}}, {"id": 39, "name": "Cotton Silk Hand Block Print Saree", "price": "Rs. 3000", "brand": "Biba", "category": {"usertype": {"usertype": "Women"}, "category": "Saree"}}, {"id": 40, "name": "Rust Red Linen Saree", "price": "Rs. 3500", "brand": "Biba", "category": {"usertype": {"usertype": "Women"}, "category": "Saree"}}, {"id": 41, "name": "Beautiful Peacock Blue Cotton Linen Saree", "price": "Rs. 5000", "brand": "Madame", "category": {"usertype": {"usertype": "Women"}, "category": "Saree"}}, {"id": 42, "name": "Lace Top For Women", "price": "Rs. 1400", "brand": "Mast &amp; Harbour", "category": {"usertype": {"usertype": "Women"}, "category": "Tops"}}, {"id": 43, "name": "GRAPHIC DESIGN MEN T SHIRT - BLUE", "price": "Rs. 1389", "brand": "Mast &amp; Harbour", "category": {"usertype": {"usertype": "Men"}, "category": "Tshirts"}}]} 
+ </msg>
+<msg time="2024-12-02T11:38:33.659857" level="INFO">C:\Users\DW2\PycharmProjects\PythonProject\.venv\Lib\site-packages\urllib3\connectionpool.py:1099: InsecureRequestWarning: Unverified HTTPS request is being made to host 'automationexercise.com'. Adding certificate verification is strongly advised. See: https://urllib3.readthedocs.io/en/latest/advanced-usage.html#tls-warnings
+  warnings.warn(</msg>
+<msg time="2024-12-02T11:38:33.660847" level="INFO">${response} = &lt;Response [200]&gt;</msg>
+<var>${response}</var>
+<arg>api_session</arg>
+<arg>${base_url}</arg>
+<doc>Sends a GET request on a previously created HTTP Session.</doc>
+<status status="PASS" start="2024-12-02T11:38:32.483093" elapsed="1.177845"/>
+</kw>
+<kw name="Should Be Equal As Numbers" owner="BuiltIn">
+<msg time="2024-12-02T11:38:33.663216" level="INFO">Argument types are:
+&lt;class 'int'&gt;
+&lt;class 'str'&gt;</msg>
+<arg>${response.status_code}</arg>
+<arg>200</arg>
+<doc>Fails if objects are unequal after converting them to real numbers.</doc>
+<status status="PASS" start="2024-12-02T11:38:33.661663" elapsed="0.001728"/>
+</kw>
+<kw name="Log" owner="BuiltIn">
+<msg time="2024-12-02T11:38:33.665227" level="INFO">{'responseCode': 200, 'products': [{'id': 1, 'name': 'Blue Top', 'price': 'Rs. 500', 'brand': 'Polo', 'category': {'usertype': {'usertype': 'Women'}, 'category': 'Tops'}}, {'id': 2, 'name': 'Men Tshirt', 'price': 'Rs. 400', 'brand': 'H&amp;M', 'category': {'usertype': {'usertype': 'Men'}, 'category': 'Tshirts'}}, {'id': 3, 'name': 'Sleeveless Dress', 'price': 'Rs. 1000', 'brand': 'Madame', 'category': {'usertype': {'usertype': 'Women'}, 'category': 'Dress'}}, {'id': 4, 'name': 'Stylish Dress', 'price': 'Rs. 1500', 'brand': 'Madame', 'category': {'usertype': {'usertype': 'Women'}, 'category': 'Dress'}}, {'id': 5, 'name': 'Winter Top', 'price': 'Rs. 600', 'brand': 'Mast &amp; Harbour', 'category': {'usertype': {'usertype': 'Women'}, 'category': 'Tops'}}, {'id': 6, 'name': 'Summer White Top', 'price': 'Rs. 400', 'brand': 'H&amp;M', 'category': {'usertype': {'usertype': 'Women'}, 'category': 'Tops'}}, {'id': 7, 'name': 'Madame Top For Women', 'price': 'Rs. 1000', 'brand': 'Madame', 'category': {'usertype': {'usertype': 'Women'}, 'category': 'Tops'}}, {'id': 8, 'name': 'Fancy Green Top', 'price': 'Rs. 700', 'brand': 'Polo', 'category': {'usertype': {'usertype': 'Women'}, 'category': 'Tops'}}, {'id': 11, 'name': 'Sleeves Printed Top - White', 'price': 'Rs. 499', 'brand': 'Babyhug', 'category': {'usertype': {'usertype': 'Kids'}, 'category': 'Tops &amp; Shirts'}}, {'id': 12, 'name': 'Half Sleeves Top Schiffli Detailing - Pink', 'price': 'Rs. 359', 'brand': 'Babyhug', 'category': {'usertype': {'usertype': 'Kids'}, 'category': 'Tops &amp; Shirts'}}, {'id': 13, 'name': 'Frozen Tops For Kids', 'price': 'Rs. 278', 'brand': 'Allen Solly Junior', 'category': {'usertype': {'usertype': 'Kids'}, 'category': 'Tops &amp; Shirts'}}, {'id': 14, 'name': 'Full Sleeves Top Cherry - Pink', 'price': 'Rs. 679', 'brand': 'Kookie Kids', 'category': {'usertype': {'usertype': 'Kids'}, 'category': 'Tops &amp; Shirts'}}, {'id': 15, 'name': 'Printed Off Shoulder Top - White', 'price': 'Rs. 315', 'brand': 'Babyhug', 'category': {'usertype': {'usertype': 'Kids'}, 'category': 'Tops &amp; Shirts'}}, {'id': 16, 'name': 'Sleeves Top and Short - Blue &amp; Pink', 'price': 'Rs. 478', 'brand': 'Babyhug', 'category': {'usertype': {'usertype': 'Kids'}, 'category': 'Dress'}}, {'id': 18, 'name': 'Little Girls Mr. Panda Shirt', 'price': 'Rs. 1200', 'brand': 'Kookie Kids', 'category': {'usertype': {'usertype': 'Kids'}, 'category': 'Tops &amp; Shirts'}}, {'id': 19, 'name': 'Sleeveless Unicorn Patch Gown - Pink', 'price': 'Rs. 1050', 'brand': 'Allen Solly Junior', 'category': {'usertype': {'usertype': 'Kids'}, 'category': 'Dress'}}, {'id': 20, 'name': 'Cotton Mull Embroidered Dress', 'price': 'Rs. 1190', 'brand': 'Kookie Kids', 'category': {'usertype': {'usertype': 'Kids'}, 'category': 'Dress'}}, {'id': 21, 'name': 'Blue Cotton Indie Mickey Dress', 'price': 'Rs. 1530', 'brand': 'Biba', 'category': {'usertype': {'usertype': 'Kids'}, 'category': 'Dress'}}, {'id': 22, 'name': 'Long Maxi Tulle Fancy Dress Up Outfits -Pink', 'price': 'Rs. 1600', 'brand': 'Biba', 'category': {'usertype': {'usertype': 'Kids'}, 'category': 'Dress'}}, {'id': 23, 'name': 'Sleeveless Unicorn Print Fit &amp; Flare Net Dress - Multi', 'price': 'Rs. 1100', 'brand': 'Biba', 'category': {'usertype': {'usertype': 'Kids'}, 'category': 'Dress'}}, {'id': 24, 'name': 'Colour Blocked Shirt – Sky Blue', 'price': 'Rs. 849', 'brand': 'Allen Solly Junior', 'category': {'usertype': {'usertype': 'Kids'}, 'category': 'Tops &amp; Shirts'}}, {'id': 28, 'name': 'Pure Cotton V-Neck T-Shirt', 'price': 'Rs. 1299', 'brand': 'H&amp;M', 'category': {'usertype': {'usertype': 'Men'}, 'category': 'Tshirts'}}, {'id': 29, 'name': 'Green Side Placket Detail T-Shirt', 'price': 'Rs. 1000', 'brand': 'Polo', 'category': {'usertype': {'usertype': 'Men'}, 'category': 'Tshirts'}}, {'id': 30, 'name': 'Premium Polo T-Shirts', 'price': 'Rs. 1500', 'brand': 'Polo', 'category': {'usertype': {'usertype': 'Men'}, 'category': 'Tshirts'}}, {'id': 31, 'name': 'Pure Cotton Neon Green Tshirt', 'price': 'Rs. 850', 'brand': 'H&amp;M', 'category': {'usertype': {'usertype': 'Men'}, 'category': 'Tshirts'}}, {'id': 33, 'name': 'Soft Stretch Jeans', 'price': 'Rs. 799', 'brand': 'Polo', 'category': {'usertype': {'usertype': 'Men'}, 'category': 'Jeans'}}, {'id': 35, 'name': 'Regular Fit Straight Jeans', 'price': 'Rs. 1200', 'brand': 'H&amp;M', 'category': {'usertype': {'usertype': 'Men'}, 'category': 'Jeans'}}, {'id': 37, 'name': 'Grunt Blue Slim Fit Jeans', 'price': 'Rs. 1400', 'brand': 'Polo', 'category': {'usertype': {'usertype': 'Men'}, 'category': 'Jeans'}}, {'id': 38, 'name': 'Rose Pink Embroidered Maxi Dress', 'price': 'Rs. 2300', 'brand': 'Madame', 'category': {'usertype': {'usertype': 'Women'}, 'category': 'Dress'}}, {'id': 39, 'name': 'Cotton Silk Hand Block Print Saree', 'price': 'Rs. 3000', 'brand': 'Biba', 'category': {'usertype': {'usertype': 'Women'}, 'category': 'Saree'}}, {'id': 40, 'name': 'Rust Red Linen Saree', 'price': 'Rs. 3500', 'brand': 'Biba', 'category': {'usertype': {'usertype': 'Women'}, 'category': 'Saree'}}, {'id': 41, 'name': 'Beautiful Peacock Blue Cotton Linen Saree', 'price': 'Rs. 5000', 'brand': 'Madame', 'category': {'usertype': {'usertype': 'Women'}, 'category': 'Saree'}}, {'id': 42, 'name': 'Lace Top For Women', 'price': 'Rs. 1400', 'brand': 'Mast &amp; Harbour', 'category': {'usertype': {'usertype': 'Women'}, 'category': 'Tops'}}, {'id': 43, 'name': 'GRAPHIC DESIGN MEN T SHIRT - BLUE', 'price': 'Rs. 1389', 'brand': 'Mast &amp; Harbour', 'category': {'usertype': {'usertype': 'Men'}, 'category': 'Tshirts'}}]}</msg>
+<arg>${response.json()}</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="PASS" start="2024-12-02T11:38:33.663930" elapsed="0.001395"/>
+</kw>
+<doc>Faz uma solicitação GET para a API e verifica a resposta.</doc>
+<status status="PASS" start="2024-12-02T11:38:32.481374" elapsed="1.184242"/>
+</test>
+<test id="s1-t2" name="Post All Products List" line="18">
+<kw name="Create Session" owner="RequestsLibrary">
+<msg time="2024-12-02T11:38:33.667287" level="INFO">Creating Session using : alias=api_session, url=https://automationexercise.com/api/productsList, headers={},                     cookies={}, auth=None, timeout=None, proxies=None, verify=False,                     debug=0 </msg>
+<arg>api_session</arg>
+<arg>${base_url}</arg>
+<doc>Create Session: create a HTTP session to a server</doc>
+<status status="PASS" start="2024-12-02T11:38:33.667132" elapsed="0.000289"/>
+</kw>
+<kw name="POST On Session" owner="RequestsLibrary">
+<msg time="2024-12-02T11:38:34.453907" level="INFO">POST Request : url=https://automationexercise.com/api/productsList 
+ path_url=/api/productsList 
+ headers={'User-Agent': 'python-requests/2.32.3', 'Accept-Encoding': 'gzip, deflate', 'Accept': '*/*', 'Connection': 'keep-alive', 'Content-Length': '0'} 
+ body=None 
+ </msg>
+<msg time="2024-12-02T11:38:34.454140" level="INFO">POST Response : url=https://automationexercise.com/api/productsList 
+ status=200, reason=OK 
+ headers={'Date': 'Mon, 02 Dec 2024 14:38:34 GMT', 'Content-Type': 'text/html; charset=utf-8', 'Transfer-Encoding': 'chunked', 'Connection': 'keep-alive', 'vary': 'Accept,Cookie,Accept-Encoding', 'referrer-policy': 'same-origin', 'x-frame-options': 'DENY', 'x-content-type-options': 'nosniff', 'allow': 'POST, PUT, GET, OPTIONS, DELETE', 'x-powered-by': 'Phusion Passenger(R) 6.0.23', 'status': '200 OK', 'CF-Cache-Status': 'DYNAMIC', 'Report-To': '{"endpoints":[{"url":"https:\\/\\/a.nel.cloudflare.com\\/report\\/v4?s=haRdkpHVNTSpVCywg9mxEtaZgHs1eM43NNTndQ5BW3xQ3N7a76nHrd2CPyatmMOMXiXPMH11Bic5IPeCSbnaGi6C1Ci7d87wg1yJnk9Nks4XUEaB21rLGmMhfDs91oJW%2FV%2BnyplZAiFLck0RdOyf%2BW30Oy9c"}],"group":"cf-nel","max_age":604800}', 'NEL': '{"success_fraction":0,"report_to":"cf-nel","max_age":604800}', 'Server': 'cloudflare', 'CF-RAY': '8ebc0fb28d88f219-GRU', 'Content-Encoding': 'gzip', 'alt-svc': 'h3=":443"; ma=86400', 'server-timing': 'cfL4;desc="?proto=TCP&amp;rtt=10335&amp;min_rtt=9990&amp;rtt_var=4436&amp;sent=5&amp;recv=6&amp;lost=0&amp;retrans=0&amp;sent_bytes=2870&amp;recv_bytes=808&amp;delivery_rate=319949&amp;cwnd=252&amp;unsent_bytes=0&amp;cid=8cd312c073610e6a&amp;ts=744&amp;x=0"'} 
+ body={"responseCode": 405, "message": "This request method is not supported."} 
+ </msg>
+<msg time="2024-12-02T11:38:34.454608" level="INFO">C:\Users\DW2\PycharmProjects\PythonProject\.venv\Lib\site-packages\urllib3\connectionpool.py:1099: InsecureRequestWarning: Unverified HTTPS request is being made to host 'automationexercise.com'. Adding certificate verification is strongly advised. See: https://urllib3.readthedocs.io/en/latest/advanced-usage.html#tls-warnings
+  warnings.warn(</msg>
+<msg time="2024-12-02T11:38:34.455360" level="INFO">${response} = &lt;Response [200]&gt;</msg>
+<var>${response}</var>
+<arg>api_session</arg>
+<arg>${base_url}</arg>
+<doc>Sends a POST request on a previously created HTTP Session.</doc>
+<status status="PASS" start="2024-12-02T11:38:33.667807" elapsed="0.787645"/>
+</kw>
+<kw name="Should Not Be Equal" owner="BuiltIn">
+<msg time="2024-12-02T11:38:34.457403" level="INFO">Argument types are:
+&lt;class 'int'&gt;
+&lt;class 'str'&gt;</msg>
+<arg>${response.status_code}</arg>
+<arg>200</arg>
+<doc>Fails if the given objects are equal.</doc>
+<status status="PASS" start="2024-12-02T11:38:34.456137" elapsed="0.001426"/>
+</kw>
+<kw name="Log To Console" owner="BuiltIn">
+<arg>${response.json()}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" start="2024-12-02T11:38:34.457870" elapsed="0.000683"/>
+</kw>
+<doc>Faz uma solicitação POST para a API e verifica a resposta.</doc>
+<status status="PASS" start="2024-12-02T11:38:33.666633" elapsed="0.792161"/>
+</test>
+<test id="s1-t3" name="Get All Brands List" line="25">
+<kw name="Create Session" owner="RequestsLibrary">
+<msg time="2024-12-02T11:38:34.460567" level="INFO">Creating Session using : alias=api_session, url=https://automationexercise.com/api/brandsList, headers={},                     cookies={}, auth=None, timeout=None, proxies=None, verify=False,                     debug=0 </msg>
+<arg>api_session</arg>
+<arg>${url}</arg>
+<doc>Create Session: create a HTTP session to a server</doc>
+<status status="PASS" start="2024-12-02T11:38:34.460417" elapsed="0.000670"/>
+</kw>
+<kw name="GET On Session" owner="RequestsLibrary">
+<msg time="2024-12-02T11:38:35.233036" level="INFO">GET Request : url=https://automationexercise.com/api/brandsList 
+ path_url=/api/brandsList 
+ headers={'User-Agent': 'python-requests/2.32.3', 'Accept-Encoding': 'gzip, deflate', 'Accept': '*/*', 'Connection': 'keep-alive'} 
+ body=None 
+ </msg>
+<msg time="2024-12-02T11:38:35.233261" level="INFO">GET Response : url=https://automationexercise.com/api/brandsList 
+ status=200, reason=OK 
+ headers={'Date': 'Mon, 02 Dec 2024 14:38:34 GMT', 'Content-Type': 'text/html; charset=utf-8', 'Transfer-Encoding': 'chunked', 'Connection': 'keep-alive', 'vary': 'Accept,Cookie,Accept-Encoding', 'referrer-policy': 'same-origin', 'x-frame-options': 'DENY', 'x-content-type-options': 'nosniff', 'allow': 'POST, PUT, GET, OPTIONS, DELETE', 'x-powered-by': 'Phusion Passenger(R) 6.0.23', 'status': '200 OK', 'CF-Cache-Status': 'DYNAMIC', 'Report-To': '{"endpoints":[{"url":"https:\\/\\/a.nel.cloudflare.com\\/report\\/v4?s=fhH0ASQb%2BlfuJkjGOvzIjde2D%2B4ErHrmFICGO27WlUGhx3A%2BgMBOqYSbIUlYarnF9ovExZY6vANYVIf7bcg%2BxcQ8j2ZN3xt49XHNDrLC%2BOsnGaGS1XX4AbywxiaShVavKkAEPAyn7OnxlYNCNo0AWz%2BBQrcE"}],"group":"cf-nel","max_age":604800}', 'NEL': '{"success_fraction":0,"report_to":"cf-nel","max_age":604800}', 'Server': 'cloudflare', 'CF-RAY': '8ebc0fb7891ff1de-GRU', 'Content-Encoding': 'gzip', 'alt-svc': 'h3=":443"; ma=86400', 'server-timing': 'cfL4;desc="?proto=TCP&amp;rtt=9325&amp;min_rtt=9239&amp;rtt_var=3638&amp;sent=5&amp;recv=6&amp;lost=0&amp;retrans=0&amp;sent_bytes=2872&amp;recv_bytes=786&amp;delivery_rate=410793&amp;cwnd=252&amp;unsent_bytes=0&amp;cid=49c63980f1b0d064&amp;ts=729&amp;x=0"'} 
+ body={"responseCode": 200, "brands": [{"id": 1, "brand": "Polo"}, {"id": 2, "brand": "H&amp;M"}, {"id": 3, "brand": "Madame"}, {"id": 4, "brand": "Madame"}, {"id": 5, "brand": "Mast &amp; Harbour"}, {"id": 6, "brand": "H&amp;M"}, {"id": 7, "brand": "Madame"}, {"id": 8, "brand": "Polo"}, {"id": 11, "brand": "Babyhug"}, {"id": 12, "brand": "Babyhug"}, {"id": 13, "brand": "Allen Solly Junior"}, {"id": 14, "brand": "Kookie Kids"}, {"id": 15, "brand": "Babyhug"}, {"id": 16, "brand": "Babyhug"}, {"id": 18, "brand": "Kookie Kids"}, {"id": 19, "brand": "Allen Solly Junior"}, {"id": 20, "brand": "Kookie Kids"}, {"id": 21, "brand": "Biba"}, {"id": 22, "brand": "Biba"}, {"id": 23, "brand": "Biba"}, {"id": 24, "brand": "Allen Solly Junior"}, {"id": 28, "brand": "H&amp;M"}, {"id": 29, "brand": "Polo"}, {"id": 30, "brand": "Polo"}, {"id": 31, "brand": "H&amp;M"}, {"id": 33, "brand": "Polo"}, {"id": 35, "brand": "H&amp;M"}, {"id": 37, "brand": "Polo"}, {"id": 38, "brand": "Madame"}, {"id": 39, "brand": "Biba"}, {"id": 40, "brand": "Biba"}, {"id": 41, "brand": "Madame"}, {"id": 42, "brand": "Mast &amp; Harbour"}, {"id": 43, "brand": "Mast &amp; Harbour"}]} 
+ </msg>
+<msg time="2024-12-02T11:38:35.233466" level="INFO">C:\Users\DW2\PycharmProjects\PythonProject\.venv\Lib\site-packages\urllib3\connectionpool.py:1099: InsecureRequestWarning: Unverified HTTPS request is being made to host 'automationexercise.com'. Adding certificate verification is strongly advised. See: https://urllib3.readthedocs.io/en/latest/advanced-usage.html#tls-warnings
+  warnings.warn(</msg>
+<msg time="2024-12-02T11:38:35.234175" level="INFO">${response} = &lt;Response [200]&gt;</msg>
+<var>${response}</var>
+<arg>api_session</arg>
+<arg>${url}</arg>
+<doc>Sends a GET request on a previously created HTTP Session.</doc>
+<status status="PASS" start="2024-12-02T11:38:34.461379" elapsed="0.772883"/>
+</kw>
+<kw name="Should Be Equal As Numbers" owner="BuiltIn">
+<msg time="2024-12-02T11:38:35.236183" level="INFO">Argument types are:
+&lt;class 'int'&gt;
+&lt;class 'str'&gt;</msg>
+<arg>${response.status_code}</arg>
+<arg>200</arg>
+<doc>Fails if objects are unequal after converting them to real numbers.</doc>
+<status status="PASS" start="2024-12-02T11:38:35.234871" elapsed="0.001478"/>
+</kw>
+<kw name="Log" owner="BuiltIn">
+<msg time="2024-12-02T11:38:35.238122" level="INFO">{'responseCode': 200, 'brands': [{'id': 1, 'brand': 'Polo'}, {'id': 2, 'brand': 'H&amp;M'}, {'id': 3, 'brand': 'Madame'}, {'id': 4, 'brand': 'Madame'}, {'id': 5, 'brand': 'Mast &amp; Harbour'}, {'id': 6, 'brand': 'H&amp;M'}, {'id': 7, 'brand': 'Madame'}, {'id': 8, 'brand': 'Polo'}, {'id': 11, 'brand': 'Babyhug'}, {'id': 12, 'brand': 'Babyhug'}, {'id': 13, 'brand': 'Allen Solly Junior'}, {'id': 14, 'brand': 'Kookie Kids'}, {'id': 15, 'brand': 'Babyhug'}, {'id': 16, 'brand': 'Babyhug'}, {'id': 18, 'brand': 'Kookie Kids'}, {'id': 19, 'brand': 'Allen Solly Junior'}, {'id': 20, 'brand': 'Kookie Kids'}, {'id': 21, 'brand': 'Biba'}, {'id': 22, 'brand': 'Biba'}, {'id': 23, 'brand': 'Biba'}, {'id': 24, 'brand': 'Allen Solly Junior'}, {'id': 28, 'brand': 'H&amp;M'}, {'id': 29, 'brand': 'Polo'}, {'id': 30, 'brand': 'Polo'}, {'id': 31, 'brand': 'H&amp;M'}, {'id': 33, 'brand': 'Polo'}, {'id': 35, 'brand': 'H&amp;M'}, {'id': 37, 'brand': 'Polo'}, {'id': 38, 'brand': 'Madame'}, {'id': 39, 'brand': 'Biba'}, {'id': 40, 'brand': 'Biba'}, {'id': 41, 'brand': 'Madame'}, {'id': 42, 'brand': 'Mast &amp; Harbour'}, {'id': 43, 'brand': 'Mast &amp; Harbour'}]}</msg>
+<arg>${response.json()}</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="PASS" start="2024-12-02T11:38:35.236964" elapsed="0.001305"/>
+</kw>
+<doc>Faz uma solicitação GET para a API e verifica a resposta.</doc>
+<status status="PASS" start="2024-12-02T11:38:34.459934" elapsed="0.778932"/>
+</test>
+<test id="s1-t4" name="PUT All Brands List" line="32">
+<kw name="Create Session" owner="RequestsLibrary">
+<msg time="2024-12-02T11:38:35.241775" level="INFO">Creating Session using : alias=api_session, url=https://automationexercise.com/api/brandsList, headers={},                     cookies={}, auth=None, timeout=None, proxies=None, verify=False,                     debug=0 </msg>
+<arg>api_session</arg>
+<arg>${url}</arg>
+<doc>Create Session: create a HTTP session to a server</doc>
+<status status="PASS" start="2024-12-02T11:38:35.241397" elapsed="0.000724"/>
+</kw>
+<kw name="PUT On Session" owner="RequestsLibrary">
+<msg time="2024-12-02T11:38:36.050500" level="INFO">PUT Request : url=https://automationexercise.com/api/brandsList 
+ path_url=/api/brandsList 
+ headers={'User-Agent': 'python-requests/2.32.3', 'Accept-Encoding': 'gzip, deflate', 'Accept': '*/*', 'Connection': 'keep-alive', 'Content-Length': '0'} 
+ body=None 
+ </msg>
+<msg time="2024-12-02T11:38:36.050736" level="INFO">PUT Response : url=https://automationexercise.com/api/brandsList 
+ status=200, reason=OK 
+ headers={'Date': 'Mon, 02 Dec 2024 14:38:35 GMT', 'Content-Type': 'text/html; charset=utf-8', 'Transfer-Encoding': 'chunked', 'Connection': 'keep-alive', 'vary': 'Accept,Cookie,Accept-Encoding', 'referrer-policy': 'same-origin', 'x-frame-options': 'DENY', 'x-content-type-options': 'nosniff', 'allow': 'POST, PUT, GET, OPTIONS, DELETE', 'x-powered-by': 'Phusion Passenger(R) 6.0.23', 'status': '200 OK', 'CF-Cache-Status': 'DYNAMIC', 'Report-To': '{"endpoints":[{"url":"https:\\/\\/a.nel.cloudflare.com\\/report\\/v4?s=00g8CnMZdCMuLKUmaIBzpyuBRtbvq25esGFJQD6GyFKRqB3IhU%2BDf4UpP3g%2Fh2Tesx96iQUtmt3IIkVD1tvdH%2BBUkxFyvIK5LE8c2MzcRfWnOGG6xjKLHnekEzXzgk2MEcpg5a%2BWFTQHLji3vxRuGUEr1BPJ"}],"group":"cf-nel","max_age":604800}', 'NEL': '{"success_fraction":0,"report_to":"cf-nel","max_age":604800}', 'Server': 'cloudflare', 'CF-RAY': '8ebc0fbc8beaae8d-GRU', 'Content-Encoding': 'gzip', 'alt-svc': 'h3=":443"; ma=86400', 'server-timing': 'cfL4;desc="?proto=TCP&amp;rtt=9188&amp;min_rtt=9188&amp;rtt_var=4594&amp;sent=6&amp;recv=7&amp;lost=0&amp;retrans=1&amp;sent_bytes=3022&amp;recv_bytes=805&amp;delivery_rate=136000&amp;cwnd=252&amp;unsent_bytes=0&amp;cid=9520d9c527219577&amp;ts=755&amp;x=0"'} 
+ body={"responseCode": 405, "message": "This request method is not supported."} 
+ </msg>
+<msg time="2024-12-02T11:38:36.050887" level="INFO">C:\Users\DW2\PycharmProjects\PythonProject\.venv\Lib\site-packages\urllib3\connectionpool.py:1099: InsecureRequestWarning: Unverified HTTPS request is being made to host 'automationexercise.com'. Adding certificate verification is strongly advised. See: https://urllib3.readthedocs.io/en/latest/advanced-usage.html#tls-warnings
+  warnings.warn(</msg>
+<msg time="2024-12-02T11:38:36.051488" level="INFO">${response} = &lt;Response [200]&gt;</msg>
+<var>${response}</var>
+<arg>api_session</arg>
+<arg>${url}</arg>
+<doc>Sends a PUT request on a previously created HTTP Session.</doc>
+<status status="PASS" start="2024-12-02T11:38:35.242796" elapsed="0.808775"/>
+</kw>
+<kw name="Should Not Be Equal" owner="BuiltIn">
+<msg time="2024-12-02T11:38:36.053309" level="INFO">Argument types are:
+&lt;class 'int'&gt;
+&lt;class 'str'&gt;</msg>
+<arg>${response.status_code}</arg>
+<arg>200</arg>
+<doc>Fails if the given objects are equal.</doc>
+<status status="PASS" start="2024-12-02T11:38:36.052251" elapsed="0.001192"/>
+</kw>
+<kw name="Log To Console" owner="BuiltIn">
+<arg>${response.json()}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" start="2024-12-02T11:38:36.054036" elapsed="0.001324"/>
+</kw>
+<doc>Faz uma solicitação PUT para a API e verifica a resposta.</doc>
+<status status="PASS" start="2024-12-02T11:38:35.240368" elapsed="0.815389"/>
+</test>
+<test id="s1-t5" name="POST To Search Product" line="39">
+<kw name="Create Session" owner="RequestsLibrary">
+<msg time="2024-12-02T11:38:36.058211" level="INFO">Creating Session using : alias=api_session, url=https://automationexercise.com/api/searchProduct, headers={},                     cookies={}, auth=None, timeout=None, proxies=None, verify=False,                     debug=0 </msg>
+<arg>api_session</arg>
+<arg>${search_url}</arg>
+<doc>Create Session: create a HTTP session to a server</doc>
+<status status="PASS" start="2024-12-02T11:38:36.057908" elapsed="0.000485"/>
+</kw>
+<kw name="Create Dictionary" owner="BuiltIn">
+<msg time="2024-12-02T11:38:36.059133" level="INFO">${headers} = {'Content-Type': 'application/json'}</msg>
+<var>${headers}</var>
+<arg>Content-Type=application/json</arg>
+<doc>Creates and returns a dictionary based on the given ``items``.</doc>
+<status status="PASS" start="2024-12-02T11:38:36.058790" elapsed="0.000377"/>
+</kw>
+<kw name="Create Dictionary" owner="BuiltIn">
+<msg time="2024-12-02T11:38:36.059804" level="INFO">${body} = {'search_product': '{"search_product": "tshirt"}'}</msg>
+<var>${body}</var>
+<arg>search_product=${search_term}</arg>
+<doc>Creates and returns a dictionary based on the given ``items``.</doc>
+<status status="PASS" start="2024-12-02T11:38:36.059496" elapsed="0.000339"/>
+</kw>
+<kw name="POST On Session" owner="RequestsLibrary">
+<msg time="2024-12-02T11:38:37.539900" level="INFO">POST Request : url=https://automationexercise.com/api/searchProduct 
+ path_url=/api/searchProduct 
+ headers={'User-Agent': 'python-requests/2.32.3', 'Accept-Encoding': 'gzip, deflate', 'Accept': '*/*', 'Connection': 'keep-alive', 'Content-Type': 'application/json', 'Content-Length': '54'} 
+ body=b'{"search_product": "{\\"search_product\\": \\"tshirt\\"}"}' 
+ </msg>
+<msg time="2024-12-02T11:38:37.540121" level="INFO">POST Response : url=https://automationexercise.com/api/searchProduct 
+ status=200, reason=OK 
+ headers={'Date': 'Mon, 02 Dec 2024 14:38:37 GMT', 'Content-Type': 'text/html; charset=utf-8', 'Transfer-Encoding': 'chunked', 'Connection': 'keep-alive', 'vary': 'Accept,Cookie,Accept-Encoding', 'referrer-policy': 'same-origin', 'x-frame-options': 'DENY', 'x-content-type-options': 'nosniff', 'allow': 'POST, PUT, GET, OPTIONS, DELETE', 'x-powered-by': 'Phusion Passenger(R) 6.0.23', 'status': '200 OK', 'CF-Cache-Status': 'DYNAMIC', 'Report-To': '{"endpoints":[{"url":"https:\\/\\/a.nel.cloudflare.com\\/report\\/v4?s=KPEjaHYcagV1RDMGRi8KMef%2BHa3BSzwLSHCmcZzIEiSlkMq%2B6FmEwx%2F3CCcduNNNP9hdS08uY%2FOqLGAGZl07FmwPXSVce8naSRTZz6N8f9JCHqr0ljDb594UgkvYimvZoLi6AlYCZry6HUk3DRlHxwwcSKLb"}],"group":"cf-nel","max_age":604800}', 'NEL': '{"success_fraction":0,"report_to":"cf-nel","max_age":604800}', 'Server': 'cloudflare', 'CF-RAY': '8ebc0fc64cd08a87-NRT', 'Content-Encoding': 'gzip', 'alt-svc': 'h3=":443"; ma=86400', 'server-timing': 'cfL4;desc="?proto=TCP&amp;rtt=292245&amp;min_rtt=292018&amp;rtt_var=109962&amp;sent=5&amp;recv=7&amp;lost=0&amp;retrans=0&amp;sent_bytes=2870&amp;recv_bytes=918&amp;delivery_rate=13885&amp;cwnd=161&amp;unsent_bytes=0&amp;cid=cee8b64f01396103&amp;ts=840&amp;x=0"'} 
+ body={"responseCode": 400, "message": "Bad request, search_product parameter is missing in POST request."} 
+ </msg>
+<msg time="2024-12-02T11:38:37.540289" level="INFO">C:\Users\DW2\PycharmProjects\PythonProject\.venv\Lib\site-packages\urllib3\connectionpool.py:1099: InsecureRequestWarning: Unverified HTTPS request is being made to host 'automationexercise.com'. Adding certificate verification is strongly advised. See: https://urllib3.readthedocs.io/en/latest/advanced-usage.html#tls-warnings
+  warnings.warn(</msg>
+<msg time="2024-12-02T11:38:37.541026" level="INFO">${response} = &lt;Response [200]&gt;</msg>
+<var>${response}</var>
+<arg>api_session</arg>
+<arg>${search_url}</arg>
+<arg>headers=${headers}</arg>
+<arg>json=${body}</arg>
+<doc>Sends a POST request on a previously created HTTP Session.</doc>
+<status status="PASS" start="2024-12-02T11:38:36.060207" elapsed="1.480917"/>
+</kw>
+<kw name="Should Be Equal As Numbers" owner="BuiltIn">
+<msg time="2024-12-02T11:38:37.543053" level="INFO">Argument types are:
+&lt;class 'int'&gt;
+&lt;class 'str'&gt;</msg>
+<arg>${response.status_code}</arg>
+<arg>200</arg>
+<doc>Fails if objects are unequal after converting them to real numbers.</doc>
+<status status="PASS" start="2024-12-02T11:38:37.541805" elapsed="0.001413"/>
+</kw>
+<kw name="Log" owner="BuiltIn">
+<msg time="2024-12-02T11:38:37.544250" level="INFO">{'responseCode': 400, 'message': 'Bad request, search_product parameter is missing in POST request.'}</msg>
+<arg>${response.json()}</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="PASS" start="2024-12-02T11:38:37.543757" elapsed="0.000530"/>
+</kw>
+<doc>Faz uma solicitação POST para a API e verifica a resposta.</doc>
+<status status="PASS" start="2024-12-02T11:38:36.056933" elapsed="1.487753"/>
+</test>
+<status status="PASS" start="2024-12-02T11:38:32.079543" elapsed="5.466471"/>
+</suite>
+<statistics>
+<total>
+<stat pass="5" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="5" fail="0" skip="0" id="s1" name="Apitest">Apitest</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
